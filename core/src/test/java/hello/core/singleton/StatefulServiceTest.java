@@ -14,7 +14,7 @@ class StatefulServiceTest {
     void statefulSerivceSingleton() {
         ApplicationContext ac = new AnnotationConfigApplicationContext(TestConfig.class);
 
-        StatefulService statefulService1 = ac.getBean("statefulSerivce", StatefulService.class);
+        StatefulService statefulService1 = ac.getBean("statefulService", StatefulService.class);
         StatefulService statefulService2 = ac.getBean("statefulService", StatefulService.class);
 
         //ThreadA: A사용자 10000원 주문
